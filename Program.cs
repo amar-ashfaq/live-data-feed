@@ -1,3 +1,5 @@
+using LiveDataFeed.WebSockets;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,5 +23,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseWebSockets();
+
+var webSocketHandler = new WebSocketHandler();
+app.Map("/ws", webSocketHandler.HandleAsync);
 
 app.Run();
