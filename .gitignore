@@ -36,3 +36,5 @@ Client/node_modules/
 
 # Optional: hide client build output if you ever compile (e.g., React)
 Client/build/
+/Controllers/WeatherForecastController.cs
+/WeatherForecast.cs
