@@ -1,0 +1,27 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+}
+
+#sessionList {
+    list-style: none;
+    padding: 0;
+}
+
+    #sessionList li {
+        background: white;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    }
+
+.timestamp {
+    font-size: 0.8em;
+    color: #666;
+}
